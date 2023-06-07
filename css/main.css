@@ -1,0 +1,141 @@
+html {
+  background: url('../img/congruent_pentagon.png');
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+h1,h2 {text-align: center;}
+
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  min-height: 256px;
+  height: fit-content;
+}
+article.col1 { 
+  min-width: 256px;
+  width: fit-content;
+  max-width: 295px;
+  height: 590px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  background-color: rgba(62, 120, 66, 0.7);
+}
+article.col2 { 
+  margin-top: 2rem;
+  width: 100%; 
+}
+
+article a:link,
+article a:visited {
+  color: orange;
+}
+
+article > .content {
+  padding: 2rem;
+}
+article h1:first-child {
+  margin-top: 0;
+}
+
+.member-unit {
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.member-unit > h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+.member-unit > h1 > small {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.member-unit > p {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+.member-unit .socials a {
+  margin-top: .4rem;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.member-photo {
+  max-width: 100%;
+}
+
+#join {
+  background-color: rgb(32, 61, 34);
+}
+
+form{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label,
+textarea {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    padding: 10px;
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    line-height: 1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  form{
+    width: 70%;
+  }
+}
